@@ -1,6 +1,7 @@
 # 1 THEORY
 ## 1. Data Type
-- 변수 선언 :  (number) a = 2, b = 3.12,<br>
+- 변수 선언 :  <br>
+              (number) a = 2, b = 3.12,<br>
               (text) c = "3", <br>
               (boolean) c = True,  d = False <br>
               (none) e = None (존재하지 않음)<br>
