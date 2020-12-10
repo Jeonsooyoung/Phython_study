@@ -23,4 +23,26 @@ URL : https://docs.python.org/3/library/
 https://docs.python.org/3/library/stdtypes.html#sequence-types-list-tuple-range    
 
 
+## 1.2 Tuples and Dicts
+1) Tuple
+- days = ("Mon","Tue") 
+- 아무도 변경 할 수 없는 리스트
+- sequence를 변경 할 수 없음 
+- list 와 같은 연산자 사용 가능 (50% 정도)
+2) Dict 
+-사전과 같이 key- value 로 이루어진 list 
+person = {
+  "name":"sooo",
+  "age":15,
+  "korean":True,
+  "fav_food":["Cake","rice"]
+}
+
+print(person)
+person["happy"] = True
+print(person)
+
+## 1.3 Built in Functions
+
+
 
