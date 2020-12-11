@@ -43,6 +43,23 @@ person["happy"] = True
 print(person)
 
 ## 1.3 Built in Functions
+function : 반복해서 사용할 수 있는 기능을 정의 
+built in function : 파이썬에서 미리 정의된 함수. 언제나 사용 가능함(always available)
+<br>
+1) abs(x) : Return the <u>absolute value</u> of a number.<br>
+The argument may be an integer, a floating point number(소수점 수), or an object implementing __abs__(). If the argument is a complex number(복소수?), its magnitude(크기) is returned.
+<br><br>
+2) all(iterable)<br>
+* iterable 객체 - 반복 가능한 객체 <br>
+* 대표적으로 iterable한 타입 - list, dict, set, str, bytes, tuple, range <br>
+Return True if all elements of the iterable are true (or if the iterable is empty).
+<br><br>
+3) any(iterable)¶<br>
+Return True if any element of the iterable is true. If the iterable is empty, return False.
+<br><br>
+4) ascii(object)
+
+
 
 
 
