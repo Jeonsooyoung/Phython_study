@@ -133,8 +133,23 @@ plus(+), minus(-), times(*), division(/), negation(//), power(**) , reminder(%)<
  </code>
  여기서 x는 작업되는 배열의 item을 가르킴    
  for문을 진행하다가 특정 조건에서 break되도록 하면 해당코드에서 실행이 중단됨 
- 
+ - <strong>파이썬에서는 string 도 배열임. for문 (string, tuple, list)를 돌릴 수 있음.</strong>    
+  
 # 1.12 Modules
+- 파이썬에서는 Modules라는 것이 내장되어있음.   
+기능의 집합인데, 임포트 해서 사용할 수 있음.   
+기본으로 제공하는 Module은 모듈을 따로 설치할 필요없이 import하면 함수를 사용할 수 있음.   
+ex) import math ,  import datetime    
+
+- 모듈 전체를 불러오는 것은 비효율적. 모듈 내 해당하는 기능만 import하는 것이 좋음    
+ex) from math import ceil ( math모듈 내, ceil 기능만 임포트)     
+
+- 임포트한 모듈의 이름변경 가능 
+ex) from math import ceil as basic_sum     
+
+- 다른 파일에서 정의된 함수(기능)을 임포트 할 수 있음.    
+ex) from calculator(파일명, .py샐약 가능)impport plus(기능명)     
+
 
 
 
