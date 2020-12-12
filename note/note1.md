@@ -113,15 +113,27 @@ def p_plus(a=1,b=2) :
 
 # 1.8 Code Challenge (계산기)
 - 7가지 function 만들기 
-plus(+), minus(-), times(*), division(/), negation(//), power(**) ,reminder (%)<br>     
--숫자뿐 아니라 문자열 타입이 추가될 수도 있음 (오류체크)
+plus(+), minus(-), times(*), division(/), negation(//), power(**) , reminder(%)<br> 
+
+- 숫자뿐 아니라 문자열 타입이 추가될 수도 있음 (오류체크)
 
 # 1.9 Conditionals part One
+- if-else 조건문을 통해서 string 값에는 다른 문구 출력    
+- 조건문에 True라는 조건을 주게 되면 조건이 참이되는 결과를 실행
+- type(변수명) is str : 변수의 타입이 문자열이라면    
+
 
 # 1.10 if else and or
+- 조건문에는 boolean operation 사용. or(둘중 하나만 true), and(둘다 true), not(조건이 false) 이 있음.    
 
 # 1.11 for in
-
+- 반복문. 뭔가를 순차적으로 작업해야할 때, 사용
+<code>
+  for x in days :       
+ </code>
+ 여기서 x는 작업되는 배열의 item을 가르킴    
+ for문을 진행하다가 특정 조건에서 break되도록 하면 해당코드에서 실행이 중단됨 
+ 
 # 1.12 Modules
 
 
