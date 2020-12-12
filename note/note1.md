@@ -1,4 +1,4 @@
-# 1 THEORY
+# 1 THEORY (이론)
 ## 1. Data Type
 - 변수 선언 :  <br>
               (number) a = 2, b = 3.12,    
@@ -61,5 +61,23 @@ Return True if any element of the iterable is true. If the iterable is empty, re
 
 
 
+# 1.4 Creating a Your First Python Function     
+define a function     
+def 로 함수 정의     
+def say_hello () :     
+  print ("hello")    
+  
+- 파이썬은 중괄호로 함수의 시작과 끝을 판단하지 않음.    
+indentation(들여쓰기로) function의 안을 표시함.(보통tab키로 들여씀)    
+- 함수 명 뒤에 괄호를 추가하면 function을 실행함    
+
+# 1.5 Function Arguments
+# 1.6 Returns
+# 1.7 Keyworded Arguments
+# 1.8 Code Challenge
+# 1.9 Conditionals part One
+# 1.10 if else and or
+# 1.11 for in
+# 1.12 Modules (09:15)
 
 
