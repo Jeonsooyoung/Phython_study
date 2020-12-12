@@ -100,8 +100,21 @@ p_result = p_plus(2,3)
 print(p_result)
 
 # 1.7 Keyworded Arguments
+- 인자인데, 위치가 아닌 arguments의 이름으로 쌍을 이루어줌    
+인자의 순서를 신경 쓸 필요가 없고, 인자의 이름만 신경써주면 됨. 
+- string 안에 변수를 포함시키고 싶으면 따옴표 가장 앞에 f(format)를 추가하고 변수의 이름에 중괄호 감싸주기     
+문자열끼리 + 를 이용해서 연결할 수 있음. 
+
+
+<code>
+def p_plus(a=1,b=2) : 
+  print(a+b)
+</code>
 
 # 1.8 Code Challenge (계산기)
+- 7가지 function 만들기 
+plus(+), minus(-), times(*), division(/), negation(//), power(**) ,reminder (%)<br>     
+-숫자뿐 아니라 문자열 타입이 추가될 수도 있음 (오류체크)
 
 # 1.9 Conditionals part One
 
