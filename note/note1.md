@@ -71,13 +71,45 @@ def say_hello () :
 indentation(들여쓰기로) function의 안을 표시함.(보통tab키로 들여씀)    
 - 함수 명 뒤에 괄호를 추가하면 function을 실행함    
 
-# 1.5 Function Arguments
+
+# 1.5 Function Arguments (positional arguments)
+- print도 function 중 하나임. print function은 괄호 안에 뭔가 넣는 것을 허용한다.       
+function 에 data의 input 된 data가 필요할 경우가 있기 때문       
+함수를 정의할 때 function 이름을 정의하고, 괄호 안에 뭔가를 넣을 수 있도록 허용해야한다.    
+그리고 function 이 가질 수 있는 arguments(인자)에 이름을 지어줄 수 있음.    
+
+<code>
+  def say_hello(who) : 
+    print("hello", who)
+</code>
+
+- arguments에 기본값을 추가할 수 있음. 
+
+
 # 1.6 Returns
+-function의 결과물. 반환값을 의미    
+return 하는 순간 해당 함수는 종료됨. 함수 내에서 return 은 한번만 실행됨. 
+
+-예제에서 사용한 print함수는 결과를 단순 console에만 출력함    
+이는 print로 함수를 호출할 경우, 해당 함수 안에 return  값이 아닌 print 함수가 있으면 
+아무런 결과 출력 되지 않음 ex) 
+def p_plus(a,b) : 
+  print(a+b)
+  
+p_result = p_plus(2,3)
+print(p_result)
+
 # 1.7 Keyworded Arguments
-# 1.8 Code Challenge
+
+# 1.8 Code Challenge (계산기)
+
 # 1.9 Conditionals part One
+
 # 1.10 if else and or
+
 # 1.11 for in
-# 1.12 Modules (09:15)
+
+# 1.12 Modules
+
 
 
