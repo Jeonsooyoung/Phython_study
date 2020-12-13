@@ -17,7 +17,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[1)조건문,if문](#1-조건문,if문)   
 &nbsp;&nbsp;&nbsp;&nbsp;[2)반복문,for문](#2-반복문,for문)   
 &nbsp;&nbsp;&nbsp;&nbsp;[3)반복문,while문](#3-반복문,while문)   
-&nbsp;&nbsp;&nbsp;&nbsp;[4)반복문에서 사용하는 구문:break,continue](#4-반복문에서-사용하는-구문:break,continue)   
+&nbsp;&nbsp;&nbsp;&nbsp;[4)반복문에서 사용하는 구문,break,continue](#4-반복문에서-사용하는-구문,break,continue)   
 
 &nbsp;&nbsp;[4.함수와 클래스](#4.-함수와-클래스)   
 &nbsp;&nbsp;&nbsp;&nbsp;[1)함수란?](#1-함수란?)   
@@ -48,7 +48,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[2)이메일발송원리](#2-이메일발송원리)   
 &nbsp;&nbsp;&nbsp;&nbsp;[3)도전업무,메일보내기](#3-도전업무,메일보내기)   
 &nbsp;&nbsp;&nbsp;&nbsp;[4)자동화](#4-자동화)   
-&nbsp;&nbsp;&nbsp;&nbsp;[5)심화:다수에게발송](#5-심화:다수에게발송)    
+&nbsp;&nbsp;&nbsp;&nbsp;[5)심화,다수에게발송](#5-심화,다수에게발송)    
 
 &nbsp;&nbsp;[4.기사수집하기](#4.-기사수집하기)   
 &nbsp;&nbsp;&nbsp;&nbsp;[1)RSS](#1-RSS)   
