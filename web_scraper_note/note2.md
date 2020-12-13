@@ -35,22 +35,22 @@ ex) print(indeed_result.text)
 
 # 2.3 Extracting Indeed Pages      
 - beautiful soup 통해서 page 숫자 추출    
-<code>
-from bs4 import BeautifulSoup
+~~~
+ from bs4 import BeautifulSoup;
 
-indeed_result = requests.get("https://indeed.com/jobs?q=python&limit=50")
+ indeed_result = requests.get("https://indeed.com/jobs?q=python&limit=50");
 
-indeed_soup = BeautifulSoup(indeed_result.text,"html.parset")
+ indeed_soup = BeautifulSoup(indeed_result.text,"html.parset")
 
-print(indeed_soup)
+ print(indeed_soup)
 
-pagination = indeed_soup.find("div",{"class":"pagination"})
-print(pagination)
-</code>
+ pagination = indeed_soup.find("div",{"class":"pagination"})
+ print(pagination)
+~~~
 
 
 # 2.4 Extracting Indeed Pages part Two      
-<code>
+~~~
 from bs4 import BeautifulSoup
 
 indeed_result = requests.get("https://indeed.com/jobs?q=python&limit=50")
@@ -66,20 +66,20 @@ links = pagination.find_all("a")
 pages = []
 print(links)
 
-- 모든 anchor의 span을 찾기
+/*모든 anchor의 span을 찾기*/
 for link in links : 
     print(link.find("span"))
     pages.append(link.find("span"))
 
 max_page = pages[0:-1]
 
-</code>
+~~~
 
 # 2.5 Requesting Each Page      
+~~~
 from bs4 import BeautifulSoup
 
-#재사용 가능하도록 정리#
-<code>
+/*재사용 가능하도록 정리*/
 LIMIT = 50
 indeed_URL = requests.get(f"https://indeed.com/jobs?q=python&limit={LIMIT}")
 
@@ -116,9 +116,9 @@ def extract_indeed_jobs (last_page) :
         print(results)
         for result in results : 
             title = result.find("div",{"class":"title"}).find("a")
-    return jobs
+     return jobs
 
-</code>
+~~~
 
 
 # 2.6 Extracting Titles      
