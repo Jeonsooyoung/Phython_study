@@ -230,12 +230,88 @@ def extract_indeed_jobs (last_page) :
     return jobs
 
 ~~~
-# 2.8 Extracting Locations and Finishing up      
+# 2.8 Extracting Locations and Finishing up   
+- 리팩토링 및 장소 추출
+~~~
+from bs4 import BeautifulSoup
+
+##company 정보 가져옴#
+
+#재사용 가능하도록 정리#
+LIMIT = 50
+indeed_URL = requests.get(f"https://indeed.com/jobs?q=python&limit={LIMIT}")
+
+def extract_indeed_pages () : 
+    result = requests.get(indeed_URL)
+
+    soup = BeautifulSoup(result.text,"html.parser")
+
+    print(soup)
+
+    pagination = soup.find("div",{"class":"pagination"})
+    print(pagination)
+
+    links = pagination.find_all("a")
+    pages = []
+    print(links)
+
+    # 모든 anchor의 span을 찾기 #
+    for link in links : 
+        print(link.find("span"))
+        pages.append(link.find("span"))
+
+    max_page = pages[0:-1]
+    return max_page
+
+
+def extract_job(html):
+    title = html.find("div",{"class":"title"}).find("a")[["title"]]
+    #링크가 있는 경우, span이 있는 경우가 있음.#
+    company = html.find("span",{"class":"company"})
+    company_anchor = company.find("a")
+    if  company_anchor is not None: 
+        company = str(company.find("a").string)
+    else : 
+        company = str(company.string)
+    company = company.strip()#빈칸 제거를 위해 python strip 사용 곁가지에있는 whitespace제거 #
+    location = html.find("div",{"class":"recJobLoc"}).["data-rc-loc"]
+    job_id = html["data-jk"]
+
+    return {'title':title,'company':company,'location':location,"link":f"https://www.indeed.com/viewjob?jk={job_id}"}
+
+    """
+    - find : 가져온 데이터의 첫번째만 가져옴
+    - find_all : 리스트 결과 전부를 가져옴
+    """
+
+
+def extract_indeed_jobs (last_page) : 
+    jobs = []
+    for page in range(last_page)
+        print(f"Scrapping page {page}" )
+        #print(f"&start={page*LIMIT}")#
+        result = requests.get(f"{URL}&start={page*LIMIT}")
+        """
+        어떻게 데이터를 HTML에서 추출해야하는가?
+        beautiful soup을 이용해서 데이터 추출이 가능
+
+        """
+        soup = BeautifulSoup(result.text,"html.parser")
+        results = soup.find_all("div",{"class":"jobsearch-SerpJobCard"})
+        print(results)
+        for result in results : 
+            job = extract_job(result)
+            jobs.append(job)
+    return jobs
+~~~
+
+- 타이틀, 회사명, 장소, 링크 정보 수집 완료
 # 2.9 StackOverflow Pages      
 # 2.10 StackOverflow extract jobs      
 # 2.11 StackOverflow extract job      
 # 2.12 StackOverflow extract job part Two      
 # 2.13 StackOverflow Finish      
+
 # 2.14 What is CSV      
 # 2.15 Saving to CSV      
 # 2.16 OMG THIS IS AWESOME     
