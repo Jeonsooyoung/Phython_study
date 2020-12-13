@@ -4,7 +4,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;[1)프로그래밍이란](#1-프로그래밍이란)   
 &nbsp;&nbsp;&nbsp;&nbsp;[2)파이썬 특징](#2-파이썬특징)   
 &nbsp;&nbsp;&nbsp;&nbsp;[3)파이썬 설치하기](#3-파이썬-설치하기)   
-&nbsp;&nbsp;&nbsp;&nbsp;[4)파이썬 시작하기](#4-파이썬-시작하기)   
+&nbsp;&nbsp;&nbsp;&nbsp;[4)파이썬 시작하기](#4-파이썬-시작하기)    
+
 &nbsp;&nbsp;[2.변수와 자료형](#2.-변수와-자료형)   
 &nbsp;&nbsp;&nbsp;&nbsp;[1)변수와 자료형](#1-변수와-자료형)   
 &nbsp;&nbsp;&nbsp;&nbsp;[2)숫자 자료형](#2-숫자-자료형)   
