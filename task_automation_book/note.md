@@ -98,10 +98,10 @@
 &nbsp;&nbsp;### 1. 파이썬이란    
 &nbsp;&nbsp;&nbsp;&nbsp;#### 1 프로그래밍이란   
   - 
-&nbsp;&nbsp;&nbsp;&nbsp;[2)파이썬 특징](#2 파이썬특징)   
+&nbsp;&nbsp;&nbsp;&nbsp;#### 2 파이썬특징      
   - 스크립트 언어 
-&nbsp;&nbsp;&nbsp;&nbsp;[3)파이썬 설치하기](#3 파이썬-설치하기)   
-&nbsp;&nbsp;&nbsp;&nbsp;[4)파이썬 시작하기](#4 파이썬-시작하기)  
+&nbsp;&nbsp;&nbsp;&nbsp;#### 3 파이썬 설치하기    
+&nbsp;&nbsp;&nbsp;&nbsp;#### 4 파이썬 시작하기    
 
 
 ## 2.업무 자동화로 일 편하게 하기
