@@ -1,6 +1,6 @@
-# 2 BUILDING A JOB SCRAPPER
+# 2. BUILDING A JOB SCRAPPER
 
-# 2.0 What is Web Scrapping     
+## 2.0 What is Web Scrapping     
 - What is Web Scrapping
 : 웹상의 데이터를 추출하는 것을 이야기함
 
@@ -15,12 +15,12 @@ url 에서 제목과 상단 이미지를 가져와서 화면에 보여줌
 사용 가능
 
 
-# 2.1 What are We Building      
+## 2.1 What are We Building      
 - 프로젝트 목표 : 이번 프로젝트에서 파이썬 개발 일자리에 대한 정보를 크롤링함. (Indeed/stackoverflow)
 
 - 최종 결과물 : indeed/stackoverflow 에서 python 검색시, 나오는 검색 결과를 불러온 후, 가져온 모든 데이터를 엑셀 시트로 옮김
 
-# 2.2 Navigating with Python      
+## 2.2 Navigating with Python      
 - import urllib : 파이썬에서 제공하는 라이브러리
 - python request : 파이썬에서 요청을 만드는 기능을 모아 놓은 것 (import requests)<br>
 ex) indeed_result = request.get("https://www.indeed.com/jobs?q=python&limit=50")
@@ -33,7 +33,7 @@ ex) print(indeed_result.text)
  : beautiful soup을 통해서 페이지 숫자 추출
 
 
-# 2.3 Extracting Indeed Pages      
+## 2.3 Extracting Indeed Pages      
 - beautiful soup 통해서 page 숫자 추출    
 ~~~
  from bs4 import BeautifulSoup;
@@ -49,7 +49,7 @@ ex) print(indeed_result.text)
 ~~~
 
 
-# 2.4 Extracting Indeed Pages part Two      
+## 2.4 Extracting Indeed Pages part Two      
 ~~~
 from bs4 import BeautifulSoup
 
@@ -75,7 +75,7 @@ max_page = pages[0:-1]
 
 ~~~
 
-# 2.5 Requesting Each Page      
+## 2.5 Requesting Each Page      
 ~~~
 from bs4 import BeautifulSoup
 
@@ -116,7 +116,7 @@ def extract_indeed_jobs (last_page) :
 ~~~
 
 
-# 2.6 Extracting Titles      
+## 2.6 Extracting Titles      
 ~~~
 from bs4 import BeautifulSoup
 
@@ -166,7 +166,7 @@ def extract_indeed_jobs (last_page) :
 
 
 ~~~
-# 2.7 Extracting Companies      
+## 2.7 Extracting Companies      
 ~~~
 
 ##company 정보 가져옴#
@@ -230,7 +230,7 @@ def extract_indeed_jobs (last_page) :
     return jobs
 
 ~~~
-# 2.8 Extracting Locations and Finishing up   
+## 2.8 Extracting Locations and Finishing up   
 - 리팩토링 및 장소 추출
 ~~~
 from bs4 import BeautifulSoup
@@ -306,14 +306,14 @@ def extract_indeed_jobs (last_page) :
 ~~~
 
 - 타이틀, 회사명, 장소, 링크 정보 수집 완료
-# 2.9 StackOverflow Pages      
-# 2.10 StackOverflow extract jobs      
-# 2.11 StackOverflow extract job      
-# 2.12 StackOverflow extract job part Two      
-# 2.13 StackOverflow Finish      
+## 2.9 StackOverflow Pages      
+## 2.10 StackOverflow extract jobs      
+## 2.11 StackOverflow extract job      
+## 2.12 StackOverflow extract job part Two      
+## 2.13 StackOverflow Finish      
 
-# 2.14 What is CSV      
-# 2.15 Saving to CSV      
-# 2.16 OMG THIS IS AWESOME     
+## 2.14 What is CSV      
+## 2.15 Saving to CSV      
+## 2.16 OMG THIS IS AWESOME     
 
 
