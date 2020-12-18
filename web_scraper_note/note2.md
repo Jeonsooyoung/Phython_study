@@ -306,7 +306,7 @@ def extract_indeed_jobs (last_page) :
 ~~~
 
 - 타이틀, 회사명, 장소, 링크 정보 수집 완료
-## 2.13 StackOverflow Pages/ extract jobs / extract job / Finish      
+## 2.9 ~ 13 (StackOverflow Pages/ extract jobs / extract job / Finish)     
 ~~~
 import requests
 from bs4 import BeautifulSoup
@@ -399,7 +399,11 @@ def get_jobs():
 ~~~
 
 ## 2.14 What is CSV      
-
+ - CSV : 추출한 데이터를 파일(excel)로 옮겨 저장함. 실제 액셀 파일은 아니고, 맥, 윈도우, 브라우저, 구글 드라이브 등등에서도 사용가능한 파일. 
+ excel은 마이크로 소프트 제품이 꼭 있어야함. 
+ - 확장자명 csv. comma seperated values . 각 컬럼을 ,(comma)로 분리해줌    
+ - 각 row는 new line(새 줄) 로 구분    
+ 
 ## 2.15 Saving to CSV      
 ## 2.16 OMG THIS IS AWESOME     
 
