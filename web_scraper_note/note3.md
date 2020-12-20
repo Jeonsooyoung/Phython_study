@@ -19,3 +19,5 @@ arguments (position/keyword)
   - method의 첫번째 argument는 method를 호출하는 instance 자신임. 
   - 자기 자신을 넣은 상태로 호출
 
+## 3.4 Methods part Two
+## 3.5 Extending Classes
